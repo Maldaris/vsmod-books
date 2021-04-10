@@ -1,0 +1,10 @@
+{
+    "code": "soaked-reeds",
+    "creativeinventory": {
+        "general": ["*"]
+    },
+    "texture": {
+        "base": "item/soaked-reeds"
+    },
+    "materialdensity": 200
+}
