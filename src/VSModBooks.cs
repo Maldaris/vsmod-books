@@ -10,15 +10,15 @@ using Vintagestory.API.Server;
 
 namespace VSMod.Books
 {
-	public class Books : ModSystem
+	public class BooksMod : ModSystem
 	{
 		public override void Start(ICoreAPI api)
 		{
             base.Start(api);
 
-			api.RegisterItemClass("soakedreeds", typeof(ItemSoakedReeds));
+			api.RegisterBlockBehaviorClass("CreateReedPresser", typeof(CreateReedPresser));
 
-			api.RegisterBlockEntityClass("reedpresser", typeof(ReedPresser));
+			api.RegisterBlockEntityClass("BEReedPresser", typeof(BEReedPresser));
 
 		}
 		

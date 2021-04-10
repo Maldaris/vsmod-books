@@ -1,0 +1,10 @@
+[
+    {
+        "file": "game:blocktypes/stone/rock",
+        "op": "add",
+        "path": "/behaviors/-",
+        "value": {
+            "name": "CreateReedPresser"
+        }
+    }
+]

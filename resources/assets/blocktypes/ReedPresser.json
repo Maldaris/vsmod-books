@@ -1,6 +1,6 @@
 {
-    "code": "reedpresser",
-    "class" : "ReedPresser",
+    "code": "books:reedpresser",
+    "entityClass": "BEReedPresser",
     "attributesByType": {
         "@(.*)-{rock}": {
             "blockNumbers": {

@@ -1,10 +1,10 @@
 {
-    "code": "soaked-reeds",
+    "code": "books:soaked-reeds",
     "creativeinventory": {
         "general": ["*"]
     },
     "texture": {
-        "base": "item/soaked-reeds"
+        "base": "books:item/soaked-reeds"
     },
     "materialdensity": 200
 }

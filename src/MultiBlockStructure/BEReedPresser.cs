@@ -11,7 +11,7 @@ namespace VSMod.Books
     /// <summary>
     /// Presses reeds into sheets of paper.
     /// </summary>
-    public class ReedPresser : BlockEntityContainer
+    public class BEReedPresser : BlockEntityContainer
     {
         MultiblockStructure structure;
 
@@ -25,7 +25,7 @@ namespace VSMod.Books
 
         public override InventoryBase Inventory => inv;
         public override string InventoryClassName => "reedpresser";
-        public ReedPresser()
+        public BEReedPresser()
         {
             inv = new InventoryReedPresser(1, null, null);
         }
