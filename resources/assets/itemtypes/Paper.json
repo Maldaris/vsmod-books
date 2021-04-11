@@ -1,0 +1,10 @@
+{
+    "code": "books:paper",
+    "creativeinventory": {
+        "general": ["*"]
+    },
+    "texture": {
+        "base": "books:item/paper-blank"
+    },
+    "materialdensity": 200
+}
