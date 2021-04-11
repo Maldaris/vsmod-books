@@ -1,0 +1,25 @@
+{
+    "code": "paper",
+    "class": "Paper",
+    "creativeinventory": {
+        "general": ["*"]
+    },
+    "texturesbytype": {
+        "*-blank": {
+            "all": {
+                "base": "item/paper-blank"
+            }
+        },
+        "*-written": {
+            "all": {
+                "base": "item/paper-written"
+            }
+        }
+    },
+    "maxstacksize": 64,
+    "variantgroups": [{
+        "code": "type",
+        "states": ["blank", "written"]
+    }],
+    "materialdensity": 200
+}

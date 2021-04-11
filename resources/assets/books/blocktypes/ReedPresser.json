@@ -1,0 +1,55 @@
+{
+    "code": "reedpresser",
+    "class": "ReedPresser",
+    "creativeinventory": { "general": ["*"] },
+    "entityClass": "BEReedPresser",
+    "requiredMiningTier": 2,
+    "attributesByType": {
+        "*": {
+            "multiBlockStructure": {
+                "blockNumbers": {
+                    "air": 1,
+                    "reedpresser-*": 2,
+                    "@(air|rock-andesite|rock-granite)": 3
+                },
+                "offsets": [
+                    { "x": 1, "y": 0, "z": 0, "w": 1 },
+                    { "x": 1, "y": 0, "z": 1, "w": 1 },
+                    { "x": 1, "y": 0, "z": -1, "w": 1 },
+                    { "x": 0, "y": 0, "z": 1, "w": 1 },
+                    { "x": 0, "y": 0, "z": -1, "w": 1 },
+                    { "x": -1, "y": 0, "z": 0, "w": 1 },
+                    { "x": -1, "y": 0, "z": 1, "w": 1 },
+                    { "x": -1, "y": 0, "z": -1, "w": 1 },
+                    { "x": 1, "y": 1, "z": 0, "w": 1 },
+                    { "x": 1, "y": 1, "z": 1, "w": 1 },
+                    { "x": 1, "y": 1, "z": -1, "w": 1 },
+                    { "x": 0, "y": 1, "z": 1, "w": 1 },
+                    { "x": 0, "y": 1, "z": -1, "w": 1 },
+                    { "x": -1, "y": 1, "z": 0, "w": 1 },
+                    { "x": -1, "y": 1, "z": 1, "w": 1 },
+                    { "x": -1, "y": 1, "z": -1, "w": 1 },
+                    { "x": 0, "y": 1, "z": 0, "w": 3 }
+                ]
+            }
+        }
+    },
+    "dropsByType": {
+        "*": [
+			{
+				"type": "item", 
+				"code": "stone-{rock}", 
+				"quantity": { "avg": 2.5, "var": 0.5 } 
+			}
+		]
+    },
+    "variantgroups": [
+        { "code": "rock", "states": ["granite", "andesite"]}
+    ],
+    "texturesByType": {
+        "*": {
+            "all": { "base": "game:block/stone/rock/{rock}4" },
+            "up": {  "base": "game:block/stone/rock/{rock}4" , "overlays": ["block/reedpresser"] }
+        }
+    }
+}

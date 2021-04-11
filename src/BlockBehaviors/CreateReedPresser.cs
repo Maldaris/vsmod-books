@@ -1,3 +1,4 @@
+using System;
 using Vintagestory.API.Common;
 using Vintagestory.API.Client;
 using Vintagestory.API.Config;
@@ -18,23 +19,34 @@ namespace VSMod.Books
 
             if (!(block.Code.Path.Contains("andesite") || block.Code.Path.Contains("granite")))
             {
+                world.Logger.Debug(String.Format("{0} failed the check for rock type", block.Code.Path));
                 return false;
             }
 
             if (blockSel.Face != BlockFacing.UP)
             {
+                world.Logger.Debug(String.Format("{0} was not  the correct face, expected {1}", blockSel.Face, BlockFacing.UP));
                 return false;
             }
 
             bool sneaking = byPlayer.WorldData.EntityControls.Sneak;
             ItemSlot slot = byPlayer.InventoryManager.ActiveHotbarSlot;
 
-            if (sneaking && slot.Itemstack.Class == EnumItemClass.Item && slot.Itemstack.Item.FirstCodePart() == "cattailtops")
+            if (slot.Itemstack == null) return false;
+
+            if (sneaking && slot.Itemstack.Class == EnumItemClass.Item && slot.Itemstack.Item.Code.Path.Contains("soakedreeds"))
             {
                 ItemStack stk = slot.Itemstack;
-                if (stk.StackSize > 10)
+                if (stk.StackSize >= 10)
                 {
-                    Block target = world.GetBlock(new AssetLocation("books:blocktypes/reedpresser"));
+                    String rockType = block.Code.Path.Contains("andesite") ? "andesite" : block.Code.Path.Contains("granite") ? "granite" : null;
+
+                    if (rockType == null) {
+                        world.Logger.Error("how'd we get here?");
+                        return false;
+                    }
+
+                    Block target = world.GetBlock(new AssetLocation(String.Format("books:reedpresser-{0}", rockType)));
                     
                     if (target == null)
                     {
@@ -77,8 +89,10 @@ namespace VSMod.Books
                     return false;
                 }
             }
-
-
+            if (slot.Itemstack.Class == EnumItemClass.Item) {
+                world.Logger.Debug(String.Format("Tried to use the wrong item type for creating a presser {0}", slot.Itemstack.Item.Code.Path));
+            }
+            
             return false;
         }
     }

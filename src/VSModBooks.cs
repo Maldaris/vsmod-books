@@ -16,20 +16,21 @@ namespace VSMod.Books
 		{
             base.Start(api);
 
+			api.RegisterBlockClass("ReedPresser", typeof(ReedPresser));
 			api.RegisterBlockBehaviorClass("CreateReedPresser", typeof(CreateReedPresser));
-
 			api.RegisterBlockEntityClass("BEReedPresser", typeof(BEReedPresser));
+			api.RegisterItemClass("Paper", typeof(ItemPaper));
 
 		}
 		
 		public override void StartClientSide(ICoreClientAPI api)
 		{
-			
+			base.StartClientSide(api);
 		}
 		
 		public override void StartServerSide(ICoreServerAPI api)
 		{
-			
+			base.StartServerSide(api);
 		}
 	}
 }

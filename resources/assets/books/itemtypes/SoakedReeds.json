@@ -1,0 +1,9 @@
+{
+    "code": "soakedreeds",
+    "creativeinventory": { "general": ["*"], "items": ["*"] },
+	"maxstacksize": 64,
+    "texture": {
+        "base": "item/soakedreeds"
+    },
+    "materialdensity": 200
+}
