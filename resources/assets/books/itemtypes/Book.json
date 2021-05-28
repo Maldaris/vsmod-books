@@ -1,0 +1,8 @@
+{
+    "code": "Book",
+    "class": "ItemBook",
+    "shape": { "base": "game:item/lore/book" },
+    "texture": { "base": "item/book" },
+    "creativeinventory": { "general": ["*"], "items": ["*"] }
+
+}

@@ -10,6 +10,13 @@ Adds writeable books, with all the details involved, including pressing papyrus,
 
 VSCode tasks/launch configurations are provided in the `.vscode` folder. Make sure you follow [this guide](https://github.com/copygirl/howto-example-mod) when setting up your dev environment.
 
+## Credits
+
+Special thanks
+
+* Maelbek (Maelbek#1827) for the Inkwell model & textures
+* The /vm/ Vintage Story server for inspiration and feedback on the mod
+
 ## LICENSE
 
 Licensed under the MIT License. Copyright 2021 Maldaris.

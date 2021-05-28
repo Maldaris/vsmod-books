@@ -17,7 +17,7 @@ namespace VSMod.Books
 
             handling = EnumHandling.PassThrough;
 
-            if (!(block.Code.Path.Contains("andesite") || block.Code.Path.Contains("granite")))
+            if (!(block.Code.Path.Contains("andesite-rock") || block.Code.Path.Contains("granite-rock")))
             {
                 world.Logger.Debug(String.Format("{0} failed the check for rock type", block.Code.Path));
                 return false;
@@ -39,7 +39,7 @@ namespace VSMod.Books
                 ItemStack stk = slot.Itemstack;
                 if (stk.StackSize >= 10)
                 {
-                    String rockType = block.Code.Path.Contains("andesite") ? "andesite" : block.Code.Path.Contains("granite") ? "granite" : null;
+                    String rockType = block.Code.Path.Contains("andesite-rock") ? "andesite" : block.Code.Path.Contains("granite-rock") ? "granite" : null;
 
                     if (rockType == null) {
                         world.Logger.Error("how'd we get here?");

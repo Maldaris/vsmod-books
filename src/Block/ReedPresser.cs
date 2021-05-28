@@ -5,7 +5,7 @@ using Vintagestory.API.MathTools;
 
 namespace VSMod.Books
 {
-    public class ReedPresser : Block
+    public class BlockReedPresser : Block
     {
         public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
         {

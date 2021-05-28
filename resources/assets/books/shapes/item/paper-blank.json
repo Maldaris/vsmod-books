@@ -1,0 +1,28 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"paper-blank": "block/paper-blank"
+	},
+	"elements": [
+		{
+			"name": "Page",
+			"from": [ 4.0, 0.0, 3.5 ], 
+			"to": [ 12.0, 0.1, 13.5 ], 
+			"rotationOrigin": [ 9.0, 0.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#paper-blank", "uv": [ 1.5, 0.0, 9.5, 0.5 ] },
+				"east": { "texture": "#paper-blank", "uv": [ 11.5, 2.5, 12.0, 12.5 ], "rotation": 90 },
+				"south": { "texture": "#paper-blank", "uv": [ 1.5, 15.5, 9.5, 16.0 ] },
+				"west": { "texture": "#paper-blank", "uv": [ 0.0, 3.5, 0.5, 13.5 ], "rotation": 90 },
+				"up": { "texture": "#paper-blank", "uv": [ 0.0, 0.0, 12.0, 16.0 ], "autoUv": false },
+				"down": { "texture": "#paper-blank", "uv": [ 0.0, 0.0, 12.0, 16.0 ], "autoUv": false }
+			}
+		}
+	]}

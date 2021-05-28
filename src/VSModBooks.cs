@@ -16,10 +16,22 @@ namespace VSMod.Books
 		{
             base.Start(api);
 
-			api.RegisterBlockClass("ReedPresser", typeof(ReedPresser));
+			api.RegisterBlockClass("BlockReedPresser", typeof(BlockReedPresser));
+			api.RegisterBlockClass("BlockPaperStack", typeof(BlockPaperStack));
+			api.RegisterBlockClass("BlockBookStack", typeof(BlockBookStack));
+			api.RegisterBlockClass("BlockQuill", typeof(BlockQuill));
+			api.RegisterBlockClass("BlockInkwell", typeof(BlockInkwell));
+
+			api.RegisterBlockBehaviorClass("Inscribe", typeof(InscribeBehavior));
 			api.RegisterBlockBehaviorClass("CreateReedPresser", typeof(CreateReedPresser));
+
 			api.RegisterBlockEntityClass("BEReedPresser", typeof(BEReedPresser));
-			api.RegisterItemClass("Paper", typeof(ItemPaper));
+			api.RegisterBlockEntityClass("BEBookStack", typeof(BEBookStack));
+			api.RegisterBlockEntityClass("BEPaperStack", typeof(BEPaperStack));
+
+			api.RegisterItemClass("ItemPaper", typeof(ItemPaper));
+			api.RegisterItemClass("ItemBook", typeof(ItemBook));
+			api.RegisterItemClass("ItemBookBinding", typeof(ItemBookBinding));
 
 		}
 		

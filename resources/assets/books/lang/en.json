@@ -1,6 +1,10 @@
 {
     "item-soakedreeds": "Soaked Reeds",
     "item-paper-blank": "Paper (Blank)",
+    "item-paper-written": "Paper (Written)",
+    "item-bookbinding": "Book Binding",
+    "item-book": "Book",
     "block-reedpresser-andesite": "Reed Presser (Andesite)",
-    "block-reedpresser-granite": "Reed Presser (Granite)"
+    "block-reedpresser-granite": "Reed Presser (Granite)",
+    "block-inkwell": "Inkwell"
 }

@@ -1,0 +1,18 @@
+{
+	"code": "inkwell", 
+	"class": "BlockInkwell",
+	"creativeinventory": { "general": ["*"], "items": ["*"] },
+	"blockmaterial": "Glass",
+	"shape": { 
+		"base": "books:block/inkwell" 
+	},
+	"resistance": 2,
+	"sounds": {
+		"place": "game:block/anvil",
+		"walk": "game:walk/stone"
+	},
+	"sideopaque": { "all": false },
+	"sideao": { "all": true },
+	"emitsideao": { "all": false },
+	"sidesolid": { "all": false }
+}

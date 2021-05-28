@@ -1,25 +1,20 @@
 {
     "code": "paper",
-    "class": "Paper",
-    "creativeinventory": {
-        "general": ["*"]
-    },
-    "texturesbytype": {
-        "*-blank": {
-            "all": {
-                "base": "item/paper-blank"
-            }
+    "class": "ItemPaper",
+    "variantgroups": [
+        { "code": "content", "states": [ "blank", "written" ] }
+    ],
+    "attributesbytype": {
+        "paper-blank": {
+            "maxstacksize": 64
         },
-        "*-written": {
-            "all": {
-                "base": "item/paper-written"
-            }
+        "paper-written": {
+            "maxstacksize": 1
         }
     },
-    "maxstacksize": 64,
-    "variantgroups": [{
-        "code": "type",
-        "states": ["blank", "written"]
-    }],
-    "materialdensity": 200
+    "materialdensity": 250,
+    "shape": {
+        "base": "item/paper-{content}"
+    },
+    "creativeinventory": { "general": ["*"], "items": ["*"] }
 }

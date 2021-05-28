@@ -1,0 +1,28 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"paper-written": "block/paper-written"
+	},
+	"elements": [
+		{
+			"name": "Page",
+			"from": [ 4.0, 0.0, 3.5 ], 
+			"to": [ 12.0, 0.1, 13.5 ], 
+			"rotationOrigin": [ 9.0, 0.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#paper-written", "uv": [ 1.5, 0.0, 9.5, 0.5 ] },
+				"east": { "texture": "#paper-written", "uv": [ 11.5, 2.5, 12.0, 12.5 ], "rotation": 90 },
+				"south": { "texture": "#paper-written", "uv": [ 1.5, 15.5, 9.5, 16.0 ] },
+				"west": { "texture": "#paper-written", "uv": [ 0.0, 3.5, 0.5, 13.5 ], "rotation": 90 },
+				"up": { "texture": "#paper-written", "uv": [ 0.0, 0.0, 12.0, 16.0 ], "autoUv": false },
+				"down": { "texture": "#paper-written", "uv": [ 0.0, 0.0, 12.0, 16.0 ], "autoUv": false }
+			}
+		}
+	]}

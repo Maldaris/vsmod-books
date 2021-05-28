@@ -1,0 +1,20 @@
+[
+    {
+        "code": "inkmaking-hematite",
+        "sealHours": 20,
+        "ingredients": [
+            { "type": "item", "code": "game:waterportion",  "quantity": 8 },
+            { "type": "item", "code": "game:nugget-hematite", "quantity": 1 }
+        ],
+        "output": { "type": "item", "code": "inkportion-hematite", "stackSize": 2 }
+    },
+    {
+        "code": "inkmaking-magnetite",
+        "sealHours": 20,
+        "ingredients": [
+            { "type": "item", "code": "game:waterportion",  "quantity": 8 },
+            { "type": "item", "code": "game:nugget-magnetite", "quantity": 1 }
+        ],
+        "output": { "type": "item", "code": "inkportion-magnetite", "stackSize": 2 }
+    }
+]
